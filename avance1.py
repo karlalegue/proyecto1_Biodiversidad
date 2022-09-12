@@ -216,13 +216,13 @@ print ("la cantidad de planta en el cuadrante es:", planta)
 print ("el porcentaje de bacteria en el cuadrante es %", bacteria*100/16)
 print ("el porcentaje de agua en el cuadrante es %", agua*100/16)
 print ("el porcentaje de planta en el cuadrante es %", planta*100/16)
-if bacteria > agua or bacteria > planta: 
+if bacteria > agua and bacteria > planta: 
     print ("el elemento que tiene mayor ocurrencia es bacteria")
 else:
-    if agua > bacteria or agua > planta: 
+    if agua > bacteria and agua > planta: 
         print ("el elemento que tiene mayor ocurrencia es el agua" )
     else: 
-        if planta > agua or planta > bacteria: 
+        if planta > agua and planta > bacteria: 
             print ("el elemento que tiene mayor ocurrencia es planta")
 
 if bacteria == agua:
@@ -233,3 +233,4 @@ else:
     else: 
         if agua == planta: 
             print ("en el cuadrante el elemento agua ha empatado con el elemento planta")
+    
