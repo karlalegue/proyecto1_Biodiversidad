@@ -216,6 +216,7 @@ print ("La cantidad de planta en el cuadrante es:", planta)
 print ("El porcentaje de bacteria en el cuadrante es",bacteria*100/16, "%")
 print ("El porcentaje de agua en el cuadrante es", agua*100/16, "%")
 print ("El porcentaje de planta en el cuadrante es", planta*100/16, "%")
+
 if bacteria > agua and bacteria > planta: 
     print ("El elemento que tiene mayor ocurrencia es bacteria")
 else:
@@ -224,6 +225,15 @@ else:
     else: 
         if planta > agua and planta > bacteria: 
             print ("El elemento que tiene mayor ocurrencia es planta")
+if bacteria < planta < agua: 
+    print ("El elemento que tiene menor ocurrencia es bacteria")   
+else:
+    if planta < bacteria <agua:
+        print ("El elemento que tiene menor ocurrencia es planta")     
+    else:
+        if agua < bacteria < planta: 
+            print ("El elemento que tiene menor ocurrencia es agua")   
+
 
 if bacteria == agua:
     print ("En el cuadrante el elemento bacteria ha empatado con el elemento agua")
@@ -233,6 +243,7 @@ else:
     else: 
         if agua == planta: 
             print ("En el cuadrante el elemento agua ha empatado con el elemento planta")
+
 
 if x == "B" and y == "B" and z == "B" and b == "B" and c == "P" and d == "B" and f== "B" and g == "B" and h == "B": 
     print ("Existe una relación Planta-Bajo-Ataque")
