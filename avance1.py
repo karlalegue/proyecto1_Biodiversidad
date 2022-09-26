@@ -210,26 +210,64 @@ print ("|",f,"|" "|",g,"|" "|",h,"|""|",i,"|")
 print ("----------------------")
 print ("|",j,"|" "|",k,"|" "|",l,"|""|",m,"|")
 
-print ("la cantidad de bacterias en el cuadrante es:", bacteria,) 
-print ("la cantidad de agua en el cuadrante es:", agua) 
-print ("la cantidad de planta en el cuadrante es:", planta)
-print ("el porcentaje de bacteria en el cuadrante es %", bacteria*100/16)
-print ("el porcentaje de agua en el cuadrante es %", agua*100/16)
-print ("el porcentaje de planta en el cuadrante es %", planta*100/16)
-if bacteria > agua or bacteria > planta: 
-    print ("el elemento que tiene mayor ocurrencia es bacteria")
+print ("La cantidad de bacterias en el cuadrante es:", bacteria,) 
+print ("La cantidad de agua en el cuadrante es:", agua) 
+print ("La cantidad de planta en el cuadrante es:", planta)
+print ("El porcentaje de bacteria en el cuadrante es",bacteria*100/16, "%")
+print ("El porcentaje de agua en el cuadrante es", agua*100/16, "%")
+print ("El porcentaje de planta en el cuadrante es", planta*100/16, "%")
+
+if bacteria > agua and bacteria > planta: 
+    print ("El elemento que tiene mayor ocurrencia es bacteria")
 else:
-    if agua > bacteria or agua > planta: 
-        print ("el elemento que tiene mayor ocurrencia es el agua" )
+    if agua > bacteria and agua > planta: 
+        print ("El elemento que tiene mayor ocurrencia es el agua" )
     else: 
-        if planta > agua or planta > bacteria: 
-            print ("el elemento que tiene mayor ocurrencia es planta")
+        if planta > agua and planta > bacteria: 
+            print ("El elemento que tiene mayor ocurrencia es planta")
+if bacteria < planta < agua: 
+    print ("El elemento que tiene menor ocurrencia es bacteria")   
+else:
+    if planta < bacteria <agua:
+        print ("El elemento que tiene menor ocurrencia es planta")     
+    else:
+        if agua < bacteria < planta: 
+            print ("El elemento que tiene menor ocurrencia es agua")   
+
 
 if bacteria == agua:
-    print ("en el cuadrante el elemento bacteria ha empatado con el elemento agua")
+    print ("En el cuadrante el elemento bacteria ha empatado con el elemento agua")
 else: 
     if bacteria == planta: 
-        print ("en el cuadrante el elemento bacteria ha empatado con el elemento planta")
+        print ("En el cuadrante el elemento bacteria ha empatado con el elemento planta")
     else: 
         if agua == planta: 
-            print ("en el cuadrante el elemento agua ha empatado con el elemento planta")
+            print ("En el cuadrante el elemento agua ha empatado con el elemento planta")
+
+
+if x == "B" and y == "B" and z == "B" and b == "B" and c == "P" and d == "B" and f== "B" and g == "B" and h == "B": 
+    print ("Existe una relación Planta-Bajo-Ataque")
+else:
+    if y == "B" and z == "B" and a == "B" and c == "B" and d == "P" and e == "B" and g == "B" and h == "B" and i== "B":
+        print ("Existe una relación Planta-Bajo-Ataque")
+    elif b == "B" and c == "B" and d == "B" and f == "B" and g == "P" and h == "B" and j == "B" and k == "B" and l == "B":
+        print ("Existe una relación Planta-Bajo-Ataque")
+
+    elif c == "B" and d == "B" and e == "B" and g == "B" and h == "P" and i == "B" and k == "B" and l == "B" and m == "B":
+        print ("Existe una relación Planta-Bajo-Ataque")
+    elif x == "P" and y == "P" and z == "P" and b == "P" and c == "A" and d == "P" and f== "P" and g == "P" and h == "P": 
+        print ("Existe una relación Agua-Riesgo-Escacez")
+    elif  y == "P" and z == "P" and a == "P" and c == "P" and d == "A" and e == "P" and g == "P" and h == "P" and i== "P":
+        print ("Existe una relación Agua-Riesgo-Escacez")
+    elif b == "P" and c == "P" and d == "P" and f == "P" and g == "A" and h == "P" and j == "P" and k == "P" and l == "P":
+        print ("Existe una relación Agua-Riesgo-Escacez")
+    elif c == "P" and d == "P" and e == "P" and g == "P" and h == "A" and i == "P" and k == "P" and l == "P" and m == "P":
+        print ("Existe una relación Agua-Riesgo-Escacez")
+
+
+
+
+
+
+
+
